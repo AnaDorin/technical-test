@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question component should build the component 1`] = `
+<div>
+  <div>
+    <div
+      id="0"
+    >
+      <img
+        alt="Image not found"
+        src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/ho/to/SO-16W-Photo.jpg"
+      />
+      <div>
+        <p>
+          Digital isolator SO-16W
+        </p>
+        <p>
+          8.83
+        </p>
+      </div>
+    </div>
+    <div
+      id="1"
+    >
+      <img
+        alt="Image not found"
+        src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/_t/if/DIL-28-Photo.jpg"
+      />
+      <div>
+        <p>
+          Audio/Video IC DIL-28
+        </p>
+        <p>
+          15.50
+        </p>
+      </div>
+    </div>
+    <div
+      id="2"
+    >
+      <img
+        alt="Image not found"
+        src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/0-/01/RND-RND 550-00019-30078040-01.jpg"
+      />
+      <div>
+        <p>
+          Smart Tweezers 4999 uF
+        </p>
+        <p>
+          209.00
+        </p>
+      </div>
+    </div>
+    <div
+      id="3"
+    >
+      <img
+        alt="Image not found"
+        src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/1-/01/Keithley-5805-30027881-01.jpg"
+      />
+      <div>
+        <p>
+          Test Probe
+        </p>
+        <p>
+          287.00
+        </p>
+      </div>
+    </div>
+    <div
+      id="4"
+    >
+      <img
+        alt="Image not found"
+        src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/7-/01/rnd-320-KD3005P-30061867-01.jpg"
+      />
+      <div>
+        <p>
+          Laboratory Power Supply 1 Ch. 0...30 VDC 5 A, Programmable
+        </p>
+        <p>
+          118.10
+        </p>
+      </div>
+    </div>
+    <div
+      id="5"
+    >
+      <img
+        alt="Image not found"
+        src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/5-/01/RND-170-00005-30043425-01.jpg"
+      />
+      <div>
+        <p>
+          Fuse holder
+        </p>
+        <p>
+          1.62
+        </p>
+      </div>
+    </div>
+    <div
+      id="6"
+    >
+      <img
+        alt="Image not found"
+        src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/ho/to/SO-8-Photo.jpg"
+      />
+      <div>
+        <p>
+          Digital isolator SO-8
+        </p>
+        <p>
+          4.67
+        </p>
+      </div>
+    </div>
+    <div
+      id="7"
+    >
+      <img
+        alt="Image not found"
+        src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/_t/if/shark-phone-gsm-900-1800.jpg"
+      />
+      <div>
+        <p>
+          GSM aerial FME/F
+        </p>
+        <p>
+          47.20
+        </p>
+      </div>
+    </div>
+    <div
+      id="8"
+    >
+      <img
+        alt="Image not found"
+        src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/bl/ue/wiring_cable_straight_blue.jpg"
+      />
+      <div>
+        <p>
+          Stranded wire, blue Stranded tin-plated copper wire PVC
+        </p>
+        <p>
+          39.20
+        </p>
+      </div>
+    </div>
+    <div
+      id="9"
+    >
+      <img
+        alt="Image not found"
+        src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/hi/te/wiring_cable_straight_white.jpg"
+      />
+      <div>
+        <p>
+          Stranded wire, 0.22 mm², white Stranded tin-plated copper wire PVC
+        </p>
+        <p>
+          10.90
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

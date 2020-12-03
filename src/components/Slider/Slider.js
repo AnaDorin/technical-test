@@ -1,5 +1,6 @@
 import React from 'react';
-import sliderData from "../data/data.json";
+import sliderData from "../../data/data.json";
+import Card from "../Card/Card";
 
 const Slider = () => {
     const slides = sliderData.carouselData;
@@ -8,11 +9,7 @@ const Slider = () => {
     <div>
         {slides.map((s, i) => {
            return( 
-                <p>
-                    {s.name}
-                    {s.price.formattedValue}
-                    {s.productImageUrl}
-                </p>
+               <Card index={i} props={slides[i]} />
             )}
          )}
     </div>

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question component should build the component 1`] = `
+<div>
+  <div
+    id="0"
+  >
+    <img
+      alt="Image not found"
+      src="https://www.distrelec.biz/Web/WebShopImages/landscape_medium/ho/to/SO-16W-Photo.jpg"
+    />
+    <div>
+      <p>
+        Digital isolator SO-16W
+      </p>
+      <p>
+        8.83
+      </p>
+    </div>
+  </div>
+</div>
+`;
