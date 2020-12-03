@@ -19,19 +19,17 @@ const Slider = () => {
     });
 
     return (
-    <div className="col">
-        <div className={`cards-slider active-slide-${currentSlide}`}>
-            <div className="cards-slider-wrapper" style={{
-                        'transform': `translateX(-${currentSlide*(100/lengthOfSlides)}%)`
-                        }}>
-                {slides.map((s, i) => {
+    <div className={`cards-slider active-slide-${currentSlide}`}>
+         <div className="cards-slider-wrapper" style={{
+                    'transform': `translateX(-${currentSlide*(100/lengthOfSlides)}%)`
+            }}>
+            {slides.map((s, i) => {
                 return( 
                     <Card index={i} props={slides[i]} />
-                    )}
                 )}
+            )}
             </div>
         </div>
-    </div>
     )
 };
 

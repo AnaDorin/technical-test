@@ -21,30 +21,32 @@ BREAKPOINTS
   }
 
 $background-color: linear-gradient(to right, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 100%);
+$color-of-cards: #f3f3f3;
+$min-width: 200px;
+$min-height: 100px;
+$card-text-color: white;
 
-  /* #region Card */
-  /* Card */
 .card {
-    border: 3px #f3f3f3 solid;
+    border: 3px $color-of-cards solid;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
     transition: all 0.3s linear;
     cursor: pointer;
-    background-color: #f3f3f3;
+    background-color: $color-of-cards;
     padding: 10px;
     max-width: 20px;
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
 
     &:hover {
-      background-color: #f3f3f3;
-      border-color: #f3f3f3;
+      background-color: $color-of-cards;
+      border-color: $color-of-cards;
     }
 
     img {
         @include breakpoint(desktop) {
-            height: 100px;
+            height: $min-height;
         }
-        height: 200px;
+        height: $min-height * 2;
         max-width: calc(100%);
         margin: 0 auto;
         display: block;
@@ -52,21 +54,19 @@ $background-color: linear-gradient(to right, rgba(255, 255, 255, 1) 15%, rgba(25
 
     .index {
         @include breakpoint(desktop) {
-            width: 205px;
-            height: 100px;
-            line-height: 20px;
+            width: $min-width + 5px;
+            height: $min-height;
             font-size: 14px;
             top: 102%;
             right: 0%;
         }
-        width: 380px;
-        line-height: 24px;
+        width: $min-width * 2;
         font-size: 24px;
         top: 60%;
-        right: 3%;
-        height: 120px;
+        right: 0%;
+        height: $min-height + 50px;
         background-color: rgba(0, 0, 0, 0.2);
-        color: #fff;
+        color: card-text-color;
         position: absolute;
         display: block;
         padding: 10px;
@@ -76,36 +76,10 @@ $background-color: linear-gradient(to right, rgba(255, 255, 255, 1) 15%, rgba(25
         @include breakpoint(desktop) {
             font-size: 14px;
         }
-        // color: green;
         font-size: 24px;
         margin: 0;
         padding: 10px 0;
         font-weight: bold;
-    }
-
-    .details {
-        position: relative;
-    }
-}
-
-.col {
-    position: relative;
-    &:before,
-    &:after {
-        content: '';
-        display: block;
-        width: 50%;
-        height: 120%;
-        background: $background-color;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-    }
-    &:after {
-        left: auto;
-        right: 0;
-        background: $background-color;
     }
 }
 
@@ -115,18 +89,15 @@ $background-color: linear-gradient(to right, rgba(255, 255, 255, 1) 15%, rgba(25
 
     .card {
       @include breakpoint(desktop) {
-        min-width: 200px;
-        height: 120px;
+        min-width: $min-width;
+        height: $min-height + 20px;
       }
 
-      min-width: 400px;
-      height: 400px;
+      min-width: $min-width * 2;
+      height: $min-width * 2;
       opacity: 0.7;
       transform: scale(0.8);
       box-shadow: none;
-      background-color: white;
-      border-color: white;
-      transition: opacity 300ms linear, border-color 300ms linear, background-color 300ms linear,transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
 }
 
@@ -135,17 +106,14 @@ $i: 0;
     .cards-slider.active-slide-#{$i} #card-#{$i} {
       opacity: 1;
       transform: scale(1);
-      background-color: #f3f3f3;
-      border-color: #f3f3f3;
-      .details {
-        opacity: 1;
-      }
+      background-color: $color-of-cards;
+      border-color: $color-of-cards;
     }
 }
 
 .cards-slider {
     position: relative;
-    max-width: 220px;
+    max-width: $min-width + 20px;
     margin: 0px 5px;
     @include breakpoint(desktop) {
         margin: 0px 10px;
@@ -154,15 +122,15 @@ $i: 0;
     &:after {
       @include breakpoint(desktop) {
         width: 100%;
-        height: 264px;
+        height: $min-height * 2 + 64px;
       }
       content: '';
       display: block;
-      width: 420px;
-      height: 420px;
+      width: $min-width * 2 + 20px;
+      height: $min-height * 4 + 20px;
       outline: 5px solid green;
       position: absolute;
       top: 0; 
       left: 0;
     }
-  }
+}

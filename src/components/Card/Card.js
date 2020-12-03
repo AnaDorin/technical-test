@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Card = ({index, props}) => {
-    const { name, productImageUrl, productImageAltText } = props;
-    const price = props.price.formattedValue;
-
+    const { name, productImageUrl, productImageAltText, price } = props;
+    const itemPrice = price.formattedValue;
+    const itemCurrency = price.currency;
+    
      return (
         <div id={`card-${index}`} className="card">
              <img src={productImageUrl} alt={productImageAltText}/>
@@ -12,9 +13,10 @@ const Card = ({index, props}) => {
                      {name}
                  </p>
                  <p>
-                     {price}
+                     {itemCurrency + " " + itemPrice}
                  </p>
-             </div>
+
+             </div>git 
          </div>
      )
 };
