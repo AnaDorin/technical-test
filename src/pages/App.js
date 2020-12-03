@@ -1,4 +1,5 @@
 import Slider from "../components/Slider/Slider";
+import './../styles/styles.scss';
 
 function App() {
   return (

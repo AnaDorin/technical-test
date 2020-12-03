@@ -5,9 +5,9 @@ const Card = ({index, props}) => {
     const price = props.price.formattedValue;
 
      return (
-         <div id={index}>
+        <div id={`card-${index}`} className="card">
              <img src={productImageUrl} alt={productImageAltText}/>
-             <div>
+             <div className="index">
                  <p>
                      {name}
                  </p>
