@@ -12,7 +12,7 @@ const Slider = () => {
     }
 
     useEffect(() => {
-        setTimeout(goToTheNextSlide, 2000);
+        setTimeout(goToTheNextSlide, 5000);
         return function() {
             clearTimeout(goToTheNextSlide);
         }
@@ -24,8 +24,8 @@ const Slider = () => {
                     'transform': `translateX(-${currentSlide*(100/lengthOfSlides)}%)`
             }}>
             {slides.map((s, i) => {
-                return( 
-                    <Card index={i} props={slides[i]} />
+                return(
+                    <Card index={i} props={slides[i]} url={slides[currentSlide].url}/>
                 )}
             )}
             </div>
